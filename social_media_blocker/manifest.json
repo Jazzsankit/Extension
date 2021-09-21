@@ -1,10 +1,10 @@
 {
   "manifest_version": 2,
-  "name": "Demo Extension",
+  "name": "Social media Blocker",
   "version": "1.0",
-  "description": "Change all images in the page",
+  "description": "Blocks all the social Media website",
   "icons": {
-    "48": "icons/border-48.png"
+    "48": "icons/social-media.png"
   },
   "content_scripts": [
     {
@@ -12,10 +12,7 @@
         "<all_urls>"
       ],
       "js": [
-        "borderify.js"
-      ],
-      "css": [
-        "myStyle.css"
+        "content.js"
       ]
     }
   ],
@@ -23,7 +20,7 @@
     "images/**"
   ],
   "browser_action": {
-    "default_icon": "images/McPro.png",
+    "default_icon": "icons/email-blocker.png",
     "default_title": "Beastify",
     "default_popup": "popup.html"
   },
